@@ -10,7 +10,7 @@
   </head>
   <body>
     <main>
-    <section class="task" id="task1">
+    <section class="task1" id="task1">
       <h2>Task 1</h2>
       <p>
         Use Javascript to target the empty div below and set the `innerText` value to something new. Write your code in the attached
@@ -19,7 +19,7 @@
       <div id="text-content"></div>
       <button onclick="task1()">Run task 1!</button>
     </section>
-    <section class="task" id="task2">
+    <section class="task2" id="task2">
       <h2>Task 2</h2>
       <p>
         Use Javascript to target this section and change its
@@ -32,9 +32,9 @@
         right element targeted with your script, it should print the HTML in the
         console.</em
       >
-      <button onclick="task2()">Run task 2!</button>
+      <button onclick="task2()" onclick="invert" id="BLYAT">Run task 2!</button>
     </section>
-    <section class="task" id="task3">
+    <section class="task3" id="task3">
       <h2>Task 3</h2>
       <p>
         Write some Javascript which will insert a new <code>li</code> into the
@@ -52,12 +52,16 @@
             You'll need to use all three methods you learned about to make this
             one work
           </li>
+          
         </ul>
       </em>
       <h3>My to do list</h3>
       <ul id="list">
         <li>Read that book</li>
         <li>Wash the car</li>
+        <div id="new-list">
+          
+        </div>
       </ul>
      <button onclick="task3()">Run task 3!</button>
     </section>
