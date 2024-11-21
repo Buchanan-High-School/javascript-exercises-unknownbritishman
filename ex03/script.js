@@ -2,7 +2,7 @@
 function task1() {
   console.log("Running task 1");
   // Don't change the variable name
-  let listItems = // Set your selector here. ;
+  let listItems = document.querySelectorAll("li") ;
 
   // This is called a conditional. If it finds matches
   // for your variable, it will tell each of them to 
@@ -17,11 +17,20 @@ function task1() {
 // Write your task 2 code inside this function!
 function task2() {
   console.log("Running task 2");
+  let element = document.querySelector("#circle")
+  element.remove()
 }
 
 // Write your task 3 code inside this function!
 function task3() {
   console.log("Running task 3");
+  let parent = document.querySelector("#div1")
+let firstEl = document.querySelector("#item1")
+
+let newNode = document.createElement("p")
+newNode.textContent = "This is the zeroth item"
+parent.insertBefore(newNode, firstEl)
+
 }
 
 // Don't change this function
