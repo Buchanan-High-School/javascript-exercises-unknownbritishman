@@ -30,5 +30,10 @@ function task2B() {
 
 function task3() {
   // Write your code in here
+let target = document.querySelectorAll(".item p")
+console.log(target)
 
+target.forEach(person => {
+  person.style.backgroundColor = '#' + person.innerText;
+})
 }
