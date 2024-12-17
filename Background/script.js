@@ -7,11 +7,12 @@ const hex = [1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"]
 const colorSpan = document.querySelector("#color")
 const colorBtn = document.querySelector("#get-color")
 const randomBtn = document.querySelector("#random-number")
+const saveBtn = document.querySelector("#save-color")
 
 colorBtn.addEventListener("click", function() {
     console.log("I WAS CLICKED AHHHHHHHHHH")
 // Get an element from the colors array
-let pickedColor = Math.floor(Math.random() * colors.length)
+let pickedColor = getRandomNumber(color)
 // Change the background of the page
 document.body.style.backgroundColor = colors[pickedColor]
 // Update colorSpan
@@ -24,11 +25,21 @@ randomBtn.addEventListener("click", function() {
     let pickedColor = "#"
     // Pick 6 random vales from hex array
     for(let el=0; el<6; el++) {
-        pickedColor += hex[Math.floor(Math.random() * hex.length)]
+        pickedColor += hex[getRandomNumber(hex)];
         console.log(pickedColor)
     }
     // Set the background
     document.body.style.backgroundColor = pickedColor
     // Update colorpSpan
       colorSpan.innerText = pickedColor
+})
+
+function getRandomNumber(list) {
+    console.log("list worked")
+    return Math.floor(Math.random() *list.length)
+} 
+
+saveBtn.addEventListener("click", function() {
+    console.log("it worked")
+    let pickedColor = 
 })
